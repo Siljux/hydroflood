@@ -1,0 +1,10 @@
+[general]
+name = Hydro Flood
+qgisMinimumVersion = 2.99
+qgisMaximumVersion = 3.99
+description = Plugin to select water bodies in a raster and automatically get their full extent
+category = Raster
+version = 1.0.0
+author = Erik Orring
+email=orringerik@gmail.com
+tags = raster
