@@ -111,7 +111,6 @@ class HydroFlood:
         if hydroLayer is None:
             hydroraster = rasterio.open(path, 'w', driver='GTiff', height=raster.height, width=raster.width,
                                 count=1, dtype='int8', crs=raster.crs, transform=raster.transform, nodata=0)
-            hydroraster.fillNoData()
             hydroraster.close()
             hydroLayer = QgsRasterLayer(path, 'Hydro Raster')
             QgsProject.instance().addMapLayer(hydroLayer)
